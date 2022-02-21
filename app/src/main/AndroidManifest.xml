@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.InsideBudget">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Users.DetalhesProduto"
+         android:parentActivityName=".Users.DetalhesProduto"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Users.Instalador.ScanActivity"
+            android:parentActivityName=".Users.Instalador.ScanActivity" />
+        <activity
+            android:name=".MenuMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Users.Instalador.DetalhesOrcamento"
+            android:parentActivityName=".Users.Instalador.DetalhesOrcamento"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Users.Instalador.DetalhesCliente"
+            android:parentActivityName=".Users.Instalador.DetalhesCliente"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Users.Instalador.CriarAtualizarCliente"
+            android:parentActivityName=".Users.Instalador.DetalhesCliente"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Users.Instalador.CriarAtualizarOrcamento"
+            android:parentActivityName=".Users.Instalador.CriarAtualizarOrcamento"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

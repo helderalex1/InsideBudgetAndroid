@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/azul"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="35dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <TextView
+        android:id="@+id/nav_header_tvFuncao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#EAE84E"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:text="Funcao" />
+
+    <TextView
+        android:id="@+id/nav_header_tvUsername"
+        android:layout_width="match_parent"
+        android:textColor="#EAE84E"
+        android:layout_height="wrap_content"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/nav_header_tVNome"
+        android:textColor="#EAE84E"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome" />
+
+    <TextView
+        android:id="@+id/nav_header_tVEmpresa"
+        android:layout_width="match_parent"
+        android:textColor="#EAE84E"
+        android:layout_height="wrap_content"
+        android:text="Empresa" />
+
+    <TextView
+        android:id="@+id/nav_header_tVEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#EAE84E"
+        android:text="Email" />
+
+</LinearLayout>

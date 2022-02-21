@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/castanho"
+    android:theme="@style/Theme.MaterialComponents">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registar"
+                    android:textColor="@color/azul"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.utils.widget.ImageFilterButton
+                    android:id="@+id/imgBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/castanho"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="?attr/homeAsUpIndicator" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="1dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutRegisterUsername"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:hint="Username"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="50"
+                    app:boxStrokeColor="@color/laranja"
+                    app:helperTextTextColor="@color/vermelho"
+                    app:hintTextColor="@color/laranja"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:startIconDrawable="@drawable/ic_login_username"
+                    app:startIconTint="@color/black"
+                    tools:layout_conversion_absoluteHeight="56dp"
+                    tools:layout_conversion_absoluteWidth="411dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputRegisterUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        tools:layout_conversion_absoluteHeight="56dp"
+                        tools:layout_conversion_absoluteWidth="411dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="0dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutRegisterNomeCompleto"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:hint="Nome Completo"
+                    app:boxStrokeColor="@color/laranja"
+                    app:helperTextTextColor="@color/vermelho"
+                    app:hintTextColor="@color/laranja"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputLayoutRegisterUsername"
+                    app:startIconDrawable="@drawable/ic_nome_register"
+                    app:startIconTint="@color/black"
+                    tools:layout_conversion_absoluteHeight="56dp"
+                    tools:layout_conversion_absoluteWidth="411dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputRegisterNomeCompleto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        tools:layout_conversion_absoluteHeight="56dp"
+                        tools:layout_conversion_absoluteWidth="411dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="56dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutRegisterEmail"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:hint="Email"
+                    app:boxStrokeColor="@color/laranja"
+                    app:helperTextTextColor="@color/vermelho"
+                    app:hintTextColor="@color/laranja"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputLayoutRegisterNomeCompleto"
+                    app:startIconDrawable="@drawable/ic_email_register"
+                    app:startIconTint="@color/black"
+                    tools:layout_conversion_absoluteHeight="56dp"
+                    tools:layout_conversion_absoluteWidth="411dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputRegisterEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        tools:layout_conversion_absoluteHeight="56dp"
+                        tools:layout_conversion_absoluteWidth="411dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="111dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutRegisterEmpresa"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:hint="Empresa"
+                    app:boxStrokeColor="@color/laranja"
+                    app:helperTextTextColor="@color/vermelho"
+                    app:hintTextColor="@color/laranja"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputLayoutRegisterEmail"
+                    app:startIconDrawable="@drawable/ic_empresa_register"
+                    app:startIconTint="@color/black"
+                    tools:layout_conversion_absoluteHeight="56dp"
+                    tools:layout_conversion_absoluteWidth="411dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputRegisterEmpresa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        tools:layout_conversion_absoluteHeight="56dp"
+                        tools:layout_conversion_absoluteWidth="411dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="167dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutRegisterMorada"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:hint="Morada"
+                    app:boxStrokeColor="@color/laranja"
+                    app:helperTextTextColor="@color/vermelho"
+                    app:hintTextColor="@color/laranja"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputLayoutRegisterEmpresa"
+                    app:startIconDrawable="@drawable/ic_morada_register"
+                    app:startIconTint="@color/black"
+                    tools:layout_conversion_absoluteHeight="56dp"
+                    tools:layout_conversion_absoluteWidth="411dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputRegisterMorada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        tools:layout_conversion_absoluteHeight="56dp"
+                        tools:layout_conversion_absoluteWidth="411dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="167dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutRegisterPais"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:hint="País"
+                    app:boxBackgroundColor="@color/castanho"
+                    app:boxStrokeColor="@color/laranja"
+                    app:helperTextTextColor="@color/vermelho"
+                    app:hintTextColor="@color/laranja"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputLayoutRegisterMorada"
+                    app:startIconDrawable="@drawable/ic_pais_register"
+                    app:startIconTint="@color/black"
+                    tools:layout_conversion_absoluteHeight="56dp"
+                    tools:layout_conversion_absoluteWidth="411dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/inputRegisterPais"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="textAutoComplete"
+                        tools:layout_conversion_absoluteHeight="56dp"
+                        tools:layout_conversion_absoluteWidth="411dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="167dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutRegisterCidade"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:hint="Cidade"
+                    app:boxStrokeColor="@color/laranja"
+                    app:helperTextTextColor="@color/vermelho"
+                    app:hintTextColor="@color/laranja"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputLayoutRegisterPais"
+                    app:startIconDrawable="@drawable/ic_cidade_register"
+                    app:startIconTint="@color/black"
+                    tools:layout_conversion_absoluteHeight="56dp"
+                    tools:layout_conversion_absoluteWidth="411dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputRegisterCidade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        tools:layout_conversion_absoluteHeight="56dp"
+                        tools:layout_conversion_absoluteWidth="411dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="167dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutRegisterTelefone"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:hint="Telefone"
+                    app:boxStrokeColor="@color/laranja"
+                    app:helperTextTextColor="@color/vermelho"
+                    app:hintTextColor="@color/laranja"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputLayoutRegisterCidade"
+                    app:startIconDrawable="@drawable/ic_telefone_register"
+                    app:startIconTint="@color/black"
+                    tools:layout_conversion_absoluteHeight="56dp"
+                    tools:layout_conversion_absoluteWidth="411dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputRegisterTelefone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        tools:layout_conversion_absoluteHeight="56dp"
+                        tools:layout_conversion_absoluteWidth="411dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="167dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutRegisterFuncao"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:hint="Selecionar função"
+                    app:boxBackgroundColor="@color/castanho"
+                    app:boxStrokeColor="@color/laranja"
+                    app:helperTextTextColor="@color/vermelho"
+                    app:hintTextColor="@color/laranja"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputLayoutRegisterTelefone"
+                    app:startIconDrawable="@drawable/ic_funcao_register"
+                    app:startIconTint="@color/black"
+                    tools:layout_conversion_absoluteHeight="56dp"
+                    tools:layout_conversion_absoluteWidth="411dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/inputRegisterFuncao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:inputType="none"
+                        tools:layout_conversion_absoluteHeight="56dp"
+                        tools:layout_conversion_absoluteWidth="411dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="167dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutRegisterPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:hint="Password"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="50"
+                    app:boxStrokeColor="@color/laranja"
+                    app:endIconMode="password_toggle"
+                    app:helperTextTextColor="@color/vermelho"
+                    app:hintTextColor="@color/laranja"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputLayoutRegisterFuncao"
+                    app:startIconDrawable="@drawable/ic_login_password"
+                    app:startIconTint="@color/black"
+                    tools:layout_conversion_absoluteHeight="56dp"
+                    tools:layout_conversion_absoluteWidth="411dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputRegisterPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        tools:layout_conversion_absoluteHeight="56dp"
+                        tools:layout_conversion_absoluteWidth="411dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="167dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutRegisterConfirmPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:hint="Confirmar password"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="50"
+                    app:boxStrokeColor="@color/laranja"
+                    app:endIconMode="password_toggle"
+                    app:helperTextTextColor="@color/vermelho"
+                    app:hintTextColor="@color/laranja"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputLayoutRegisterPassword"
+                    app:startIconDrawable="@drawable/ic_login_password"
+                    app:startIconTint="@color/black"
+                    tools:layout_conversion_absoluteHeight="56dp"
+                    tools:layout_conversion_absoluteWidth="411dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputRegisterConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        tools:layout_conversion_absoluteHeight="56dp"
+                        tools:layout_conversion_absoluteWidth="411dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="167dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_Registar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="50dp"
+                    android:backgroundTint="@color/azul"
+                    android:text="Registar"
+                    android:textColor="@color/laranja"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputLayoutRegisterConfirmPassword" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

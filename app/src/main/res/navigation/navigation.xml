@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/menuMainActivity">
+
+    <activity
+        android:id="@+id/menuMainActivity"
+        android:name="com.example.InsideBudget.MenuMainActivity"
+        android:label="MenuMainActivity" />
+    <activity
+        android:id="@+id/detalhesOrcamento"
+        android:name="com.example.InsideBudget.Users.Instalador.DetalhesOrcamento"
+        android:label="activity_detalhes_cliente"
+        tools:layout="@layout/activity_detalhes_cliente" />
+    <fragment
+        android:id="@+id/listaMeusClientesFragment"
+        android:name="com.example.InsideBudget.Users.Instalador.ListaMeusClientesFragment"
+        android:label="fragment_lista_meus_clientes"
+        tools:layout="@layout/fragment_lista_meus_clientes" >
+        <action
+            android:id="@+id/action_listaMeusClientesFragment_to_detalhesCliente2"
+            app:destination="@id/detalhesCliente" />
+    </fragment>
+    <activity
+        android:id="@+id/detalhesCliente"
+        android:name="com.example.InsideBudget.Users.Instalador.DetalhesCliente"
+        android:label="DetalhesCliente" />
+</navigation>

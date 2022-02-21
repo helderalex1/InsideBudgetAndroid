@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Users.DetalhesProduto"
+    android:background="@color/castanho">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutProdutoNome"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:enabled="false"
+        android:hint="Nome"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/laranja"
+        app:helperTextTextColor="@color/vermelho"
+        app:hintTextColor="@color/laranja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_todos_produtos"
+        app:startIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputProdutoNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutProdutoTipologia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/laranja"
+        app:helperTextTextColor="@color/vermelho"
+        app:hintTextColor="@color/laranja"
+        android:enabled="false"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        app:startIconDrawable="@drawable/ic_tipologia"
+        app:startIconTint="@color/black"
+        android:hint="Selecionar tipologia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutProdutoNome">
+
+        <AutoCompleteTextView
+            android:id="@+id/inputProdutoTipologia"
+            android:textColor="@color/black"
+            android:enabled="false"
+            android:inputType="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutProdutoReferencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:boxStrokeColor="@color/laranja"
+        android:enabled="false"
+        android:textColorHint="@color/black"
+        app:helperTextTextColor="@color/vermelho"
+        app:hintTextColor="@color/laranja"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:startIconDrawable="@drawable/ic_descricao"
+        app:startIconTint="@color/black"
+        android:hint="Referência"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutProdutoTipologia">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputProdutoRefencia"
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutProdutoPreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:boxStrokeColor="@color/laranja"
+        android:textColorHint="@color/black"
+        android:enabled="false"
+        app:helperTextTextColor="@color/vermelho"
+        app:hintTextColor="@color/laranja"
+        android:hint="Preço"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:startIconDrawable="@drawable/ic_euro"
+        app:startIconTint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutProdutoReferencia">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputProdutoPreco"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutProdutoDescricao"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Descrição"
+        android:textColorHint="@color/black"
+        android:enabled="false"
+        app:boxStrokeColor="@color/laranja"
+        app:helperTextTextColor="@color/vermelho"
+        app:hintTextColor="@color/laranja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutProdutoPreco"
+        app:startIconDrawable="@drawable/ic_descricao"
+        app:startIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputProdutoDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:textColor="@color/black"
+            android:inputType="textMultiLine"
+            android:gravity="start"
+            android:textAlignment="textStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutProdutoFornecedor"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Fornecedor"
+        android:enabled="false"
+        app:boxStrokeColor="@color/laranja"
+        app:helperTextTextColor="@color/vermelho"
+        app:hintTextColor="@color/laranja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutProdutoDescricao"
+        app:startIconDrawable="@drawable/ic_nome_register"
+        app:startIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputProdutoFornecedor"
+
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_criarProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Criar produto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:enabled="false"
+        android:visibility="invisible"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutProdutoDescricao"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_produtoAddProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        app:backgroundTint="@color/laranja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_produto_add" />
+</androidx.constraintlayout.widget.ConstraintLayout>

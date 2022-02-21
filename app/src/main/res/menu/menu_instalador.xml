@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <item android:title="@string/area_basica">
+            <item
+                android:id="@+id/nav_instalador_informacao"
+                android:icon="@drawable/ic_informacao"
+
+                android:title="Informação" />
+            <item
+                android:id="@+id/nav_instalador_clientes"
+                android:title="@string/clientes"
+                android:icon="@drawable/ic_cliente_view"/>
+        <item
+                android:id="@+id/nav_instalador_orcamentos"
+                android:title="@string/orcamentos"
+                android:icon="@drawable/ic_orcamento_view"/>
+
+            <item android:id="@+id/nav_user_todos_produtos"
+
+                android:icon="@drawable/ic_produto_view"
+                android:title="@string/produtos"/>
+    </item>
+    <item android:title="@string/minha_area">
+        <menu>
+            <item android:id="@+id/nav_dadospessoais"
+                android:title="@string/dados_pessoais"
+                android:icon="@drawable/ic_dados"/>
+            <item android:id="@+id/nav_sair"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/sair"/>
+        </menu>
+    </item>
+</menu>

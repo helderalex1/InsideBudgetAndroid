@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <item android:title="@string/area_de_administracao">
+        <menu>
+            <item
+                android:id="@+id/nav_admin_informacao"
+                android:icon="@drawable/ic_informacao"
+                android:title="@string/informacao" />
+            <item
+                android:id="@+id/nav_admin_users_com_acesso"
+                android:icon="@drawable/ic_user_acesso"
+                android:title="Utilizadores com acesso" />
+
+            <item android:id="@+id/nav_admin_users_registos_espera"
+                android:icon="@drawable/ic_user_registo_espera"
+                android:title="Registos em espera"/>
+
+            <item
+                android:id="@+id/nav_admin_users_bloqueados"
+                android:icon="@drawable/ic_user_bloqueado"
+                android:title="Utilizadores Bloqueados" />
+
+        </menu>
+    </item>
+    <item android:title="@string/minha_area">
+        <menu>
+            <item android:id="@+id/nav_dadospessoais"
+                android:title="@string/dados_pessoais"
+                android:icon="@drawable/ic_user_dados"
+                />
+            <item android:id="@+id/nav_sair"
+                android:title="@string/sair"
+                android:icon="@drawable/ic_user_sair"/>
+        </menu>
+    </item>
+</menu>

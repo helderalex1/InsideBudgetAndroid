@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/nav_fornecedor_todos_produtos"
+    android:icon="@drawable/ic_todos_produtos"
+    android:title="Todos os produtos"
+    />
+<item
+    android:id="@+id/nav_fornecedor_meus_produtos"
+    android:icon="@drawable/ic_meus_produtos"
+    android:title="Meus produtos"
+    />
+
+</menu>

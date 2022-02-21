@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Inside Budget</string>
+    <string name="title_activity_main">Inside Budget</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="erro_login_servidor" />
+    <string name="sem_ligacao_internet" />
+    <string name="openDrawer">Abrir</string>
+    <string name="closeDrawer">Fechar</string>
+    <string name="dados_pessoais">Dados Pessoais</string>
+    <string name="sair">Sair</string>
+    <string name="todos_utlizadores">Todos Utlizadores</string>
+    <string name="informacao">Informação</string>
+    <string name="utilizadores_pendentes">Utilizadores Pendentes</string>
+    <string name="area_de_administracao">Área de Administração</string>
+    <string name="minha_area">Minha Área</string>
+    <string name="produtos">Produtos</string>
+    <string name="orcamentos">Orçamentos</string>
+    <string name="clientes">Clientes</string>
+    <string name="area_basica">Área básica</string>
+    <string name="username">username</string>
+    <string name="nome">nome</string>
+    <string name="email">email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
